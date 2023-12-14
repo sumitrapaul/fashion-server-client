@@ -12,8 +12,8 @@ const MyCart = () => {
   console.log(user);
   const [cart, setCart] = useState([]);
   const navigate=useNavigate()
-  const { _id } = useParams();
-  console.log(_id);
+  // const { _id } = useParams();
+  // console.log(_id);
   useEffect(() => {
     if (user) {
       fetch(`http://localhost:5000/carts?email=${user.email}`)
