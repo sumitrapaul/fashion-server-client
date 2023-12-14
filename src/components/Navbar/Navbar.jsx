@@ -31,6 +31,11 @@ const Navbar = () => {
           My Cart
         </NavLink>
       </li>
+      <li>
+        <NavLink to="/reviews" className="bg-rose-600 text-white mx-2">
+          My Review
+        </NavLink>
+      </li>
     
     </>
   );

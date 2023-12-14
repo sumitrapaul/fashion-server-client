@@ -24,7 +24,7 @@ const AddProduct = () => {
     console.log(newProduct);
 
     //send data to the server
-    fetch("https://fashion-store-server-nf3cslkv2-sumitra-pauls-projects.vercel.app/products", {
+    fetch("http://localhost:5000/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

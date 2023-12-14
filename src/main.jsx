@@ -17,6 +17,7 @@ import PrivateRoute from "./Route/PrivateRoute";
 import BrandDetails from "./pages/BrandDetails";
 import BrandProductDetails from "./pages/BrandProductDetails";
 import Update from "./components/Update/Update";
+import MyReview from "./components/MyReview/MyReview.jsx";
 
 const router = createBrowserRouter([
   {
@@ -60,13 +61,21 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://fashion-store-server-nf3cslkv2-sumitra-pauls-projects.vercel.app/products/${params.id}`),
+          fetch(`http://localhost:5000/products/${params.id}`),
       },
       {
         path: "/carts",
         element: (
           <PrivateRoute>
             <MyCart></MyCart>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/reviews",
+        element: (
+          <PrivateRoute>
+            <MyReview></MyReview>
           </PrivateRoute>
         ),
       },
