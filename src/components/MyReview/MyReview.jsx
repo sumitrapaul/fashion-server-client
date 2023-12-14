@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useParams } from "react-router-dom";
 import Review from "./Review";
@@ -9,15 +9,15 @@ const MyReview = () => {
   const [review, setReview] = useState([]);
   const { _id } = useParams();
   console.log(_id);
-  useEffect(() => {
-    if (user) {
-      fetch(`http://localhost:5000/reviews?email=${user.email}`)
-        .then((res) => res.json())
-        .then((data) => {
-          setReview(data);
-        });
-    }
-  }, [user]);
+//   useEffect(() => {
+//     if (user) {
+//       fetch(`http://localhost:5000/reviews?email=${user.email}`)
+//         .then((res) => res.json())
+//         .then((data) => {
+//           setReview(data);
+//         });
+//     }
+//   }, [user]);
 
   return (
     <div>
