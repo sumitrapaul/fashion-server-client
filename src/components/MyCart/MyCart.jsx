@@ -16,7 +16,7 @@ const MyCart = () => {
   console.log(_id);
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/carts?email=${user.email}`)
+      fetch(`https://fashion-store-server-nf3cslkv2-sumitra-pauls-projects.vercel.app/carts?email=${user.email}`)
         .then((res) => res.json())
         .then((data) => {
           setCart(data);
@@ -38,7 +38,7 @@ const MyCart = () => {
       if (result.isConfirmed) {
         // console.log(_id)
 
-        fetch(`http://localhost:5000/carts/${_id}`, {
+        fetch(`https://fashion-store-server-nf3cslkv2-sumitra-pauls-projects.vercel.app/carts/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

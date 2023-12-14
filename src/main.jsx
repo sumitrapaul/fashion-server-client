@@ -61,7 +61,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://fashion-store-server-nf3cslkv2-sumitra-pauls-projects.vercel.app/products/${params.id}`),
       },
       {
         path: "/carts",
