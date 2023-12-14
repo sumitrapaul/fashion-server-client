@@ -61,7 +61,7 @@ const Update = () => {
         <div className=" md:flex gap-5 justify-center">
           <div className="form-control md:w-1/2 mb-6">
             <label className="label">
-              <span className="label-text">Image</span>
+              {/* <span className="label-text">Image</span> */}
             </label>
             <label className="input-group">
               <input
