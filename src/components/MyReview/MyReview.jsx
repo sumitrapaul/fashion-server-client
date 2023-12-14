@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useParams } from "react-router-dom";
@@ -8,10 +9,10 @@ const MyReview = () => {
   console.log(user);
   const [review, setReview] = useState([]);
   const { _id } = useParams();
-  console.log(_id);
+  
   useEffect(() => {
-    if (user) {
-      fetch(`https://fashion-store-server-nf3cslkv2-sumitra-pauls-projects.vercel.app/reviews?email=${user.email}`)
+    if(user) {
+      fetch(`https://fashion-store-server-three.vercel.app/reviews?email=${user.email}`)
         .then((res) => res.json())
         .then((data) => {
           setReview(data);
