@@ -70,18 +70,18 @@ const Login = () => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn bg-rose-100">Login</button>
           </div>
         </form>
 
         <p className="text-center mb-4">
           Do not have an account? Please{" "}
-          <Link to="/register" className="text-blue-600 font-bold">
+          <Link to="/register" className="text-rose-500 font-bold">
             Register
           </Link>
         </p>
         <div className="flex justify-center items-center">
-          <button onClick={handleGoogle} className="btn btn-primary">
+          <button onClick={handleGoogle} className="btn bg-rose-100">
             Google
           </button>
         </div>
