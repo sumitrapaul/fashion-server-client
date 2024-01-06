@@ -16,7 +16,7 @@ const Products = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16">
         <div
           data-aos="zoom-in-down"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -28,7 +28,7 @@ const Products = () => {
         </div>
         <div
           data-aos="flip-up"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -40,7 +40,7 @@ const Products = () => {
         </div>
         <div
           data-aos="flip-down"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -52,7 +52,7 @@ const Products = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -64,7 +64,7 @@ const Products = () => {
         </div>
         <div
           data-aos="fade-down"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -76,7 +76,7 @@ const Products = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -88,7 +88,7 @@ const Products = () => {
         </div>
         <div
           data-aos="fade-down"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -100,7 +100,7 @@ const Products = () => {
         </div>
         <div
           data-aos="zoom-in-down"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img
@@ -112,7 +112,7 @@ const Products = () => {
         </div>
         <div
           data-aos="zoom-in-up"
-          className="card card-compact w-96 bg-rose-100 shadow-xl"
+          className="card card-compact w-full bg-rose-100 shadow-xl"
         >
           <figure>
             <img

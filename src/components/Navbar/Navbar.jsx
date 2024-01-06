@@ -68,11 +68,11 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <img
-            className="w-24 h-12"
+            className="w-10 md:w-24 h-12"
             src="https://i.ibb.co/QNbxm3j/image-3-removebg-preview.png"
             alt=""
           />
-          <h4 className="font-semibold text-2xl">FashionFinesse</h4>
+          <h4 className="font-semibold text-sm md:text-2xl">FashionFinesse</h4>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

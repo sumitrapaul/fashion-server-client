@@ -14,7 +14,7 @@ const Brand = ({ brand }) => {
 
   return (
     <Link to={`/details/${brand_name}`}>
-      <div data-aos="zoom-in-down" className="card w-96 shadow-xl">
+      <div data-aos="zoom-in-down" className="card w-full shadow-xl">
         <figure className="lg:px-10 pt-10">
           <img src={brand_image} alt="Shoes" className="rounded-xl h-[270px]" />
         </figure>
