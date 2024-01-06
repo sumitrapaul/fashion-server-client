@@ -15,7 +15,7 @@ const BrandProductDetails = () => {
   const [product, setProduct] = useState(null);
   const { register, handleSubmit } = useForm();
   useEffect(() => {
-    fetch(`http://localhost:5000/productDetails/${id}`)
+    fetch(`https://fashion-store-server-three.vercel.app/productDetails/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
@@ -32,7 +32,7 @@ const BrandProductDetails = () => {
       rating: product.rating,
     };
 
-    fetch("http://localhost:5000/carts", {
+    fetch("https://fashion-store-server-three.vercel.app/carts", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -60,7 +60,7 @@ const BrandProductDetails = () => {
     formData.price = product.price;
     formData.image = product.image;
 
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://fashion-store-server-three.vercel.app/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
