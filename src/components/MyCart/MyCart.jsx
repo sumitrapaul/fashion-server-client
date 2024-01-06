@@ -13,10 +13,10 @@ const MyCart = () => {
   const [cart, setCart] = useState([]);
   const navigate=useNavigate()
   const { _id } = useParams();
-  console.log(_id);
+  
   useEffect(() => {
     if(user) {
-      fetch(`https://fashion-store-server-three.vercel.app/carts?email=${user.email}`)
+      fetch(`http://localhost:5000/carts?email=${user.email}`)
         .then((res) => res.json())
         .then((data) => {
           setCart(data);
@@ -38,7 +38,7 @@ const MyCart = () => {
       if (result.isConfirmed) {
         // console.log(_id)
 
-        fetch(`https://fashion-store-server-three.vercel.app/carts/${_id}`, {
+        fetch(`http://localhost:5000/carts/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

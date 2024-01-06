@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img
             className="w-24 h-12"
-            src="https://i.ibb.co/sRb5cMG/image.png"
+            src="https://i.ibb.co/QNbxm3j/image-3-removebg-preview.png"
             alt=""
           />
           <h4 className="font-semibold text-2xl">FashionFinesse</h4>
