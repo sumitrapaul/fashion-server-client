@@ -21,7 +21,7 @@ const AddProduct = () => {
       image,
     };
 
-    console.log(newProduct);
+  
 
     //send data to the server
     fetch("https://fashion-store-server-three.vercel.app/products", {
