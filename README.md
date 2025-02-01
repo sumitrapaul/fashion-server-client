@@ -2,7 +2,7 @@
 
 Website deploy link [here](https://assignment-shop-brand.web.app)
 
-# Project Features
+# Project Features and Functionalities
 
 * When the user visits my website, he will see a navbar,fashion banner,some brands,our exceptional products and work,FASHION, FUN AND MORE,footer.
 
